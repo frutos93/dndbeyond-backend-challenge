@@ -16,4 +16,8 @@ public class CharacterService
     {
         return await redis.GetCharacterAsync(name);
     }
+    public async Task SaveCharacterAsync(Character character)
+    {
+         await redis.SetCharacterAsync(character);
+    }
 }

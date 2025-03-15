@@ -3,10 +3,6 @@
   "WorkspaceRootPath": "C:\\Users\\cefg9\\source\\repos\\dndbeyond-backend-challenge\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8C8F7EED-DA39-4D78-B818-F3120C6D069F}|DnDBeyondChallenge\\DnDBeyondChallenge.csproj|c:\\users\\cefg9\\source\\repos\\dndbeyond-backend-challenge\\dndbeyondchallenge\\services\\redisservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8C8F7EED-DA39-4D78-B818-F3120C6D069F}|DnDBeyondChallenge\\DnDBeyondChallenge.csproj|solutionrelative:dndbeyondchallenge\\services\\redisservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{8C8F7EED-DA39-4D78-B818-F3120C6D069F}|DnDBeyondChallenge\\DnDBeyondChallenge.csproj|c:\\users\\cefg9\\source\\repos\\dndbeyond-backend-challenge\\dndbeyondchallenge\\services\\characterservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8C8F7EED-DA39-4D78-B818-F3120C6D069F}|DnDBeyondChallenge\\DnDBeyondChallenge.csproj|solutionrelative:dndbeyondchallenge\\services\\characterservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -15,24 +11,24 @@
       "RelativeMoniker": "D:0:0:{8C8F7EED-DA39-4D78-B818-F3120C6D069F}|DnDBeyondChallenge\\DnDBeyondChallenge.csproj|solutionrelative:dndbeyondchallenge\\controllers\\charactercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{8C8F7EED-DA39-4D78-B818-F3120C6D069F}|DnDBeyondChallenge\\DnDBeyondChallenge.csproj|c:\\users\\cefg9\\source\\repos\\dndbeyond-backend-challenge\\dndbeyondchallenge\\models\\character.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C8F7EED-DA39-4D78-B818-F3120C6D069F}|DnDBeyondChallenge\\DnDBeyondChallenge.csproj|solutionrelative:dndbeyondchallenge\\models\\character.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C8F7EED-DA39-4D78-B818-F3120C6D069F}|DnDBeyondChallenge\\DnDBeyondChallenge.csproj|c:\\users\\cefg9\\source\\repos\\dndbeyond-backend-challenge\\dndbeyondchallenge\\models\\requests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C8F7EED-DA39-4D78-B818-F3120C6D069F}|DnDBeyondChallenge\\DnDBeyondChallenge.csproj|solutionrelative:dndbeyondchallenge\\models\\requests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C8F7EED-DA39-4D78-B818-F3120C6D069F}|DnDBeyondChallenge\\DnDBeyondChallenge.csproj|c:\\users\\cefg9\\source\\repos\\dndbeyond-backend-challenge\\dndbeyondchallenge\\services\\redisservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C8F7EED-DA39-4D78-B818-F3120C6D069F}|DnDBeyondChallenge\\DnDBeyondChallenge.csproj|solutionrelative:dndbeyondchallenge\\services\\redisservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{8C8F7EED-DA39-4D78-B818-F3120C6D069F}|DnDBeyondChallenge\\DnDBeyondChallenge.csproj|c:\\users\\cefg9\\source\\repos\\dndbeyond-backend-challenge\\dndbeyondchallenge\\models\\utility.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8C8F7EED-DA39-4D78-B818-F3120C6D069F}|DnDBeyondChallenge\\DnDBeyondChallenge.csproj|solutionrelative:dndbeyondchallenge\\models\\utility.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8C8F7EED-DA39-4D78-B818-F3120C6D069F}|DnDBeyondChallenge\\DnDBeyondChallenge.csproj|c:\\users\\cefg9\\source\\repos\\dndbeyond-backend-challenge\\dndbeyondchallenge\\models\\damage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8C8F7EED-DA39-4D78-B818-F3120C6D069F}|DnDBeyondChallenge\\DnDBeyondChallenge.csproj|solutionrelative:dndbeyondchallenge\\models\\damage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8C8F7EED-DA39-4D78-B818-F3120C6D069F}|DnDBeyondChallenge\\DnDBeyondChallenge.csproj|c:\\users\\cefg9\\source\\repos\\dndbeyond-backend-challenge\\dndbeyondchallenge\\models\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8C8F7EED-DA39-4D78-B818-F3120C6D069F}|DnDBeyondChallenge\\DnDBeyondChallenge.csproj|solutionrelative:dndbeyondchallenge\\models\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8C8F7EED-DA39-4D78-B818-F3120C6D069F}|DnDBeyondChallenge\\DnDBeyondChallenge.csproj|c:\\users\\cefg9\\source\\repos\\dndbeyond-backend-challenge\\dndbeyondchallenge\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8C8F7EED-DA39-4D78-B818-F3120C6D069F}|DnDBeyondChallenge\\DnDBeyondChallenge.csproj|solutionrelative:dndbeyondchallenge\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8C8F7EED-DA39-4D78-B818-F3120C6D069F}|DnDBeyondChallenge\\DnDBeyondChallenge.csproj|c:\\users\\cefg9\\source\\repos\\dndbeyond-backend-challenge\\dndbeyondchallenge\\models\\character.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8C8F7EED-DA39-4D78-B818-F3120C6D069F}|DnDBeyondChallenge\\DnDBeyondChallenge.csproj|solutionrelative:dndbeyondchallenge\\models\\character.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,109 +38,97 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Utility.cs",
-              "DocumentMoniker": "C:\\Users\\cefg9\\source\\repos\\dndbeyond-backend-challenge\\DnDBeyondChallenge\\Models\\Utility.cs",
-              "RelativeDocumentMoniker": "DnDBeyondChallenge\\Models\\Utility.cs",
-              "ToolTip": "C:\\Users\\cefg9\\source\\repos\\dndbeyond-backend-challenge\\DnDBeyondChallenge\\Models\\Utility.cs",
-              "RelativeToolTip": "DnDBeyondChallenge\\Models\\Utility.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-15T22:14:52.422Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Item.cs",
-              "DocumentMoniker": "C:\\Users\\cefg9\\source\\repos\\dndbeyond-backend-challenge\\DnDBeyondChallenge\\Models\\Item.cs",
-              "RelativeDocumentMoniker": "DnDBeyondChallenge\\Models\\Item.cs",
-              "ToolTip": "C:\\Users\\cefg9\\source\\repos\\dndbeyond-backend-challenge\\DnDBeyondChallenge\\Models\\Item.cs",
-              "RelativeToolTip": "DnDBeyondChallenge\\Models\\Item.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-15T20:19:38.995Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "Damage.cs",
-              "DocumentMoniker": "C:\\Users\\cefg9\\source\\repos\\dndbeyond-backend-challenge\\DnDBeyondChallenge\\Models\\Damage.cs",
-              "RelativeDocumentMoniker": "DnDBeyondChallenge\\Models\\Damage.cs",
-              "ToolTip": "C:\\Users\\cefg9\\source\\repos\\dndbeyond-backend-challenge\\DnDBeyondChallenge\\Models\\Damage.cs",
-              "RelativeToolTip": "DnDBeyondChallenge\\Models\\Damage.cs",
-              "ViewState": "AgIAACMAAAAAAAAAAAAQwDUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-15T16:20:47.736Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Character.cs",
-              "DocumentMoniker": "C:\\Users\\cefg9\\source\\repos\\dndbeyond-backend-challenge\\DnDBeyondChallenge\\Models\\Character.cs",
-              "RelativeDocumentMoniker": "DnDBeyondChallenge\\Models\\Character.cs",
-              "ToolTip": "C:\\Users\\cefg9\\source\\repos\\dndbeyond-backend-challenge\\DnDBeyondChallenge\\Models\\Character.cs",
-              "RelativeToolTip": "DnDBeyondChallenge\\Models\\Character.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAA6wCMAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-15T16:20:46.961Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
               "Title": "RedisService.cs",
               "DocumentMoniker": "C:\\Users\\cefg9\\source\\repos\\dndbeyond-backend-challenge\\DnDBeyondChallenge\\Services\\RedisService.cs",
               "RelativeDocumentMoniker": "DnDBeyondChallenge\\Services\\RedisService.cs",
               "ToolTip": "C:\\Users\\cefg9\\source\\repos\\dndbeyond-backend-challenge\\DnDBeyondChallenge\\Services\\RedisService.cs",
               "RelativeToolTip": "DnDBeyondChallenge\\Services\\RedisService.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAmwCEAAAArAAAAAAAAAA==",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAswB0AAABDAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-15T16:20:45.395Z",
+              "WhenOpened": "2025-03-15T23:14:11.954Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "CharacterService.cs",
               "DocumentMoniker": "C:\\Users\\cefg9\\source\\repos\\dndbeyond-backend-challenge\\DnDBeyondChallenge\\Services\\CharacterService.cs",
               "RelativeDocumentMoniker": "DnDBeyondChallenge\\Services\\CharacterService.cs",
               "ToolTip": "C:\\Users\\cefg9\\source\\repos\\dndbeyond-backend-challenge\\DnDBeyondChallenge\\Services\\CharacterService.cs",
               "RelativeToolTip": "DnDBeyondChallenge\\Services\\CharacterService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAsAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-15T16:20:21.801Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "CharacterController.cs",
-              "DocumentMoniker": "C:\\Users\\cefg9\\source\\repos\\dndbeyond-backend-challenge\\DnDBeyondChallenge\\Controllers\\CharacterController.cs",
-              "RelativeDocumentMoniker": "DnDBeyondChallenge\\Controllers\\CharacterController.cs",
-              "ToolTip": "C:\\Users\\cefg9\\source\\repos\\dndbeyond-backend-challenge\\DnDBeyondChallenge\\Controllers\\CharacterController.cs",
-              "RelativeToolTip": "DnDBeyondChallenge\\Controllers\\CharacterController.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABgAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-15T15:50:33.38Z",
+              "WhenOpened": "2025-03-15T23:12:41.934Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\cefg9\\source\\repos\\dndbeyond-backend-challenge\\DnDBeyondChallenge\\Program.cs",
-              "RelativeDocumentMoniker": "DnDBeyondChallenge\\Program.cs",
-              "ToolTip": "C:\\Users\\cefg9\\source\\repos\\dndbeyond-backend-challenge\\DnDBeyondChallenge\\Program.cs",
-              "RelativeToolTip": "DnDBeyondChallenge\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAqAAAAAAAAAA==",
+              "Title": "Damage.cs",
+              "DocumentMoniker": "C:\\Users\\cefg9\\source\\repos\\dndbeyond-backend-challenge\\DnDBeyondChallenge\\Models\\Damage.cs",
+              "RelativeDocumentMoniker": "DnDBeyondChallenge\\Models\\Damage.cs",
+              "ToolTip": "C:\\Users\\cefg9\\source\\repos\\dndbeyond-backend-challenge\\DnDBeyondChallenge\\Models\\Damage.cs",
+              "RelativeToolTip": "DnDBeyondChallenge\\Models\\Damage.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAADwvzQAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-15T14:18:05.924Z",
+              "WhenOpened": "2025-03-15T22:31:57.379Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Utility.cs",
+              "DocumentMoniker": "C:\\Users\\cefg9\\source\\repos\\dndbeyond-backend-challenge\\DnDBeyondChallenge\\Models\\Utility.cs",
+              "RelativeDocumentMoniker": "DnDBeyondChallenge\\Models\\Utility.cs",
+              "ToolTip": "C:\\Users\\cefg9\\source\\repos\\dndbeyond-backend-challenge\\DnDBeyondChallenge\\Models\\Utility.cs",
+              "RelativeToolTip": "DnDBeyondChallenge\\Models\\Utility.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAgAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-15T22:31:17.714Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Requests.cs",
+              "DocumentMoniker": "C:\\Users\\cefg9\\source\\repos\\dndbeyond-backend-challenge\\DnDBeyondChallenge\\Models\\Requests.cs",
+              "RelativeDocumentMoniker": "DnDBeyondChallenge\\Models\\Requests.cs",
+              "ToolTip": "C:\\Users\\cefg9\\source\\repos\\dndbeyond-backend-challenge\\DnDBeyondChallenge\\Models\\Requests.cs",
+              "RelativeToolTip": "DnDBeyondChallenge\\Models\\Requests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-15T22:29:57.229Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CharacterController.cs",
+              "DocumentMoniker": "C:\\Users\\cefg9\\source\\repos\\dndbeyond-backend-challenge\\DnDBeyondChallenge\\Controllers\\CharacterController.cs",
+              "RelativeDocumentMoniker": "DnDBeyondChallenge\\Controllers\\CharacterController.cs",
+              "ToolTip": "C:\\Users\\cefg9\\source\\repos\\dndbeyond-backend-challenge\\DnDBeyondChallenge\\Controllers\\CharacterController.cs",
+              "RelativeToolTip": "DnDBeyondChallenge\\Controllers\\CharacterController.cs",
+              "ViewState": "AgIAACkAAAAAAAAAAAAwwEIAAABMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-15T22:28:28.756Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Character.cs",
+              "DocumentMoniker": "C:\\Users\\cefg9\\source\\repos\\dndbeyond-backend-challenge\\DnDBeyondChallenge\\Models\\Character.cs",
+              "RelativeDocumentMoniker": "DnDBeyondChallenge\\Models\\Character.cs",
+              "ToolTip": "C:\\Users\\cefg9\\source\\repos\\dndbeyond-backend-challenge\\DnDBeyondChallenge\\Models\\Character.cs",
+              "RelativeToolTip": "DnDBeyondChallenge\\Models\\Character.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAcwC8AAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-15T22:44:14.087Z",
               "EditorCaption": ""
             }
           ]

@@ -1,6 +1,0 @@
-@DummyTest_HostAddress = http://localhost:5033
-
-GET {{DummyTest_HostAddress}}/api/character/Torn
-Accept: application/json
-
-###
