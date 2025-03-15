@@ -1,0 +1,6 @@
+# @DnDBeyondChallenge_HostAddress = http://localhost:5033
+
+# GET {{DnDBeyondChallenge_HostAddress}}/api/
+# Accept: application/json
+
+###
