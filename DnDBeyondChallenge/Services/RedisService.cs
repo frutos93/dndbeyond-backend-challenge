@@ -20,7 +20,7 @@ public class RedisService
     {
         if (!Directory.Exists(directoryPath))
         {
-            // TODO: Throw warning of non existent directory
+            throw new DirectoryNotFoundException($"Directory not found: {directoryPath}");
         }
 
         foreach (var charFile in Directory.GetFiles(directoryPath, "*.json"))

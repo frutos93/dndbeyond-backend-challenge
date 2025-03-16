@@ -9,7 +9,6 @@ builder.WebHost.ConfigureKestrel(options =>
     options.ListenAnyIP(8080);
 });
 
-// Load singletons
 builder.Services.AddSingleton<IConnectionMultiplexer>(opt =>
     ConnectionMultiplexer.Connect(Environment.GetEnvironmentVariable("REDIS_CONNECTION") ?? "localhost:6379")
 );
@@ -17,7 +16,6 @@ builder.Services.AddSingleton<IConnectionMultiplexer>(opt =>
 builder.Services.AddSingleton<RedisService>();
 builder.Services.AddSingleton<CharacterService>();
 
-// Add services to the container.
 builder.Services.AddControllers();
 
 

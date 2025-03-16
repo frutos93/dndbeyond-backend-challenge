@@ -32,26 +32,35 @@ public class Character
     public int TakeDamage(DamageType damageType, int amount)
     {
         if (HasResistance(damageType))
+        {
             amount = (int)Math.Floor(amount / 2.0);
+        }
+
+        var damage = amount;
 
         if (TemporaryHitPoints > 0)
         {
-            int tempHPUsed = Math.Min(amount, TemporaryHitPoints);
+            int tempHPUsed = Math.Min(damage, TemporaryHitPoints);
             TemporaryHitPoints -= tempHPUsed;
-            amount -= tempHPUsed;
+            damage -= tempHPUsed;
         }
 
-        HitPoints = Math.Max(0, HitPoints -= amount);
+        HitPoints = Math.Max(0, HitPoints -= damage);
+
+        // Returning amount instead of damage, because damage is modified by tempHP if applicable.
         return amount;
     }
     public void Heal(int amount)
     {
-        HitPoints = Math.Max(MaxHitPoints, HitPoints += amount);
+        HitPoints = Math.Min(MaxHitPoints, HitPoints += amount);
     }
 
     public void AddTemporaryHitPoints(int tempHP)
     {
-        TemporaryHitPoints += tempHP;
+        if (tempHP > TemporaryHitPoints)
+        {
+            TemporaryHitPoints = tempHP;
+        }
     }
 }
 

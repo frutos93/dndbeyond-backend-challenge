@@ -13,7 +13,6 @@ public static class CharacterParser
 
         });
 
-        // Parse the defenses and map the string types to the correct enums
         foreach (var defense in character.Defenses)
         {
             defense.DamageType = CharacterParser.ParseDamageType(defense.DamageType.ToString());

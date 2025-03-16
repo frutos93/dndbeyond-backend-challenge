@@ -1,6 +1,14 @@
-# @DnDBeyondChallenge_HostAddress = http://localhost:5033
+@DnDBeyondChallenge_HostAddress = http://localhost:8080
 
-# GET {{DnDBeyondChallenge_HostAddress}}/api/
-# Accept: application/json
+GET {{DnDBeyondChallenge_HostAddress}}/api/character/Briv
+Accept: application/json
 
+
+### Deal Damage
+POST http://localhost:5000/api/character/Briv/damage
+Content-Type: application/json
+{
+    "damage": 5
+}
 ###
+
