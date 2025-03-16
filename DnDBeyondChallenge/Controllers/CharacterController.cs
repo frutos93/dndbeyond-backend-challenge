@@ -14,6 +14,12 @@ public class CharacterController : ControllerBase
         characterService = charService;
     }
 
+
+    /// <summary>
+    /// Retrieve a character's full object by name
+    /// </summary>
+    /// <param name="name">Name of the character</param>
+    /// <returns cref="GetCharacterResponse"/>Character details. On error returns 404</returns>
     [HttpGet("{name}")]
     public async Task<IActionResult> GetCharacter(string name)
     {
@@ -38,6 +44,14 @@ public class CharacterController : ControllerBase
         return Ok(response);
     }
 
+    /// <summary>
+    /// Deal damage to a character.
+    /// Can only deal damage if character is not immune to the damage type.
+    /// Can only deal damage if character has HP.
+    /// </summary>
+    /// <param name="name">Name of the character</param>
+    /// <param name="request" cref="DamageRequest">Request containing amount and type of damage.</param>
+    /// <returns> Returns <see cref="IActionResult"/> with <see cref="DamageResponse"/>. Otherwise returns 404 or 400.</returns>
     [HttpPost("{name}/damage")]
     public async Task<IActionResult> DealDamage(string name, [FromBody] DamageRequest request)
     {
@@ -86,6 +100,14 @@ public class CharacterController : ControllerBase
 
     }
 
+    /// <summary>
+    /// Heal a character.
+    /// Can only heal if character is not at max HP but does not exceed max HP. Does not throw error if character is at max HP.
+    /// Temporary HP is not affected by healing.
+    /// </summary>
+    /// <param name="name">Name of the character.</param>
+    /// <param name="request" cref="HealRequest"> Request containing the amount to be healed.</param>
+    /// <returns> Returns <see cref="IActionResult"/> with <see cref="HealResponse"/>. Otherwise returns 404.</returns>
     [HttpPost("{name}/heal")]
     public async Task<IActionResult> Heal(string name, [FromBody] HealRequest request)
     {
@@ -125,6 +147,14 @@ public class CharacterController : ControllerBase
         return Ok(response);
     }
 
+    /// <summary>
+    /// Add temporary HP to a character.
+    /// Can only add temporary HP if character has HP.
+    /// If character already has temporary HP, the higher value is kept.
+    /// </summary>
+    /// <param name="name">Name of the character.</param>
+    /// <param name="request" cref="TempHPRequest"> Request containing the amount add to temporary hit points.</param>
+    /// <returns> Returns <see cref="IActionResult"/> with <see cref="TempHPResponse"/>. Otherwise returns 404.</returns>
     [HttpPost("{name}/addTempHP")]
     public async Task<IActionResult> AddTemporaryHP(string name, [FromBody] TempHPRequest request)
     {
