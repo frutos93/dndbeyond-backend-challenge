@@ -19,6 +19,9 @@ public static class CharacterParser
             defense.DamageType = CharacterParser.ParseDamageType(defense.DamageType.ToString());
             defense.DefenseType = CharacterParser.ParseDefenseType(defense.DefenseType.ToString());
         }
+
+        character.MaxHitPoints = character.HitPoints;
+
         return character;
     }
     public static DamageType ParseDamageType(string type)

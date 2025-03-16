@@ -1,7 +1,6 @@
 ﻿using DnDBeyondChallenge.Models;
 using StackExchange.Redis;
 using System.Text.Json;
-using System.Xml.Linq;
 
 namespace DnDBeyondChallenge.Services;
 

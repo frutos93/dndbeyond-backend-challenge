@@ -4,6 +4,7 @@ public class Character
     public string Name { get; set; }
     public int Level { get; set; }
     public int HitPoints { get; set; }
+    public int MaxHitPoints { get; set; }
     public List<CharacterClass> Classes { get; set; }
     public Stats Stats { get; set; }
     public List<Item> Items { get; set; }
@@ -45,7 +46,7 @@ public class Character
     }
     public void Heal(int amount)
     {
-        HitPoints += amount;
+        HitPoints = Math.Max(MaxHitPoints, HitPoints += amount);
     }
 
     public void AddTemporaryHitPoints(int tempHP)

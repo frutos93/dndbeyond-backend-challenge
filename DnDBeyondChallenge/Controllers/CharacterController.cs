@@ -1,10 +1,6 @@
 using DnDBeyondChallenge.Models;
 using DnDBeyondChallenge.Services;
 using Microsoft.AspNetCore.Mvc;
-using StackExchange.Redis;
-using System.Text.Json;
-using System.Threading.Tasks;
-using System.Xml.Linq;
 
 namespace DnDBeyondChallenge.Controllers;
 
@@ -26,7 +22,20 @@ public class CharacterController : ControllerBase
         {
             return NotFound($"Character '{name}' not found.");
         }
-        return Ok(character);
+
+        var response = new GetCharacterResponse
+        {
+            Name = character.Name,
+            HitPoints = character.HitPoints,
+            TemporaryHitPoints = character.TemporaryHitPoints,
+            Level = character.Level,
+            Classes = character.Classes,
+            Stats = character.Stats,
+            Items = character.Items,
+            Defenses = character.Defenses
+        };
+
+        return Ok(response);
     }
 
     [HttpPost("{name}/damage")]
@@ -40,13 +49,24 @@ public class CharacterController : ControllerBase
         if (character == null)
             return NotFound($"Character '{name}' not found.");
 
+        if (character.HitPoints <= 0 && character.TemporaryHitPoints <= 0)
+            return BadRequest($"{name} HP is at 0. Cannot take any more damage.");
+
         if (character.IsImmune(damageType))
             return Ok($"{name} is immune to {damageType} damage. Took no damage.");
 
         var amount = character.TakeDamage(damageType, request.Amount);
         await characterService.SaveCharacterAsync(character);
 
-        return Ok($"{name} took {amount} {damageType} damage.");
+        var response = new DamageResponse
+        {
+            Name = character.Name,
+            HitPoints = character.HitPoints,
+            TemporaryHitPoints = character.TemporaryHitPoints,
+            DamageTaken = amount,
+        };
+
+        return Ok(response);
 
     }
 
@@ -60,7 +80,17 @@ public class CharacterController : ControllerBase
 
         character.Heal(request.Amount);
 
-        return Ok($"{name} healed for {request.Amount}.");
+        await characterService.SaveCharacterAsync(character);
+
+        var response = new HealResponse
+        {
+            Name = character.Name,
+            HitPoints = character.HitPoints,
+            TemporaryHitPoints = character.TemporaryHitPoints,
+            MaxHitPoints = character.MaxHitPoints
+        };
+
+        return Ok(response);
     }
 
     [HttpPost("{name}/addTempHP")]
@@ -73,6 +103,15 @@ public class CharacterController : ControllerBase
 
         character.AddTemporaryHitPoints(request.Amount);
 
-        return Ok($"{name} was added {request.Amount} temporary HP.");
+        await characterService.SaveCharacterAsync(character);
+
+        var tempHPResponse = new TempHPResponse
+        {
+            Name = character.Name,
+            HitPoints = character.HitPoints,
+            TemporaryHitPoints = character.TemporaryHitPoints,
+        };
+
+        return Ok(tempHPResponse);
     }
 }
