@@ -88,7 +88,7 @@ Retrieve the character with the specified name.
 #### Request:
 No request body is needed.
 
-#### Response:
+#### Response 200:
 ```json
 {
   "name": "Briv",
@@ -149,7 +149,7 @@ Request Body
 }
 ```
 
-Response:
+Response 200:
 ```json
 {
     "damageTaken": 5,
@@ -159,7 +159,6 @@ Response:
 }
 ```
 
-Possible Errors:
 Error code 400
 ```
 "[name] HP is at 0. Cannot take any more damage."
@@ -209,7 +208,7 @@ Request Body
 }
 ```
 
-Response
+Response 200
 ```json
 {
     "name": "Briv",
