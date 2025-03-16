@@ -4,9 +4,14 @@ using StackExchange.Redis;
 var builder = WebApplication.CreateBuilder(args);
 
 
+builder.WebHost.ConfigureKestrel(options =>
+{
+    options.ListenAnyIP(8080);
+});
+
 // Load singletons
 builder.Services.AddSingleton<IConnectionMultiplexer>(opt =>
-    ConnectionMultiplexer.Connect("localhost:6379")
+    ConnectionMultiplexer.Connect(Environment.GetEnvironmentVariable("REDIS_CONNECTION") ?? "localhost:6379")
 );
 
 builder.Services.AddSingleton<RedisService>();

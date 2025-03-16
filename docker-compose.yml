@@ -1,0 +1,25 @@
+version: '3.7'
+
+services:
+  api:
+    build:
+      context: .
+      dockerfile: DnDBeyondChallenge/Dockerfile
+    ports:
+      - "8080:8080"
+    depends_on:
+      redis:
+        condition: service_healthy
+    environment:
+      - REDIS_CONNECTION=redis:6379
+  redis:
+    image: redis:alpine
+    container_name: redis-server
+    ports:
+      - "6379:6379"
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      retries: 5
+      start_period: 10s
+      timeout: 5s
