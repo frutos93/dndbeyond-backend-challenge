@@ -1,7 +1,7 @@
 ﻿namespace DnDBeyondChallenge.Models;
 public class Character
 {
-    public string Name { get; set; }
+    public string Name { get; set; } = string.Empty;
     public int Level { get; set; }
     public int HitPoints { get; set; }
     public int MaxHitPoints { get; set; }

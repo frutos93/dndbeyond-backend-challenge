@@ -13,6 +13,16 @@ public static class CharacterParser
 
         });
 
+        if (character.Name == string.Empty)
+        {
+            throw new InvalidDataException("Missing or empty 'Name' field.");
+        }
+
+        if (character.HitPoints <= 0)
+        {
+            throw new InvalidDataException("'HitPoints'must be a non-negative non-zero integer.");
+        }
+
         foreach (var defense in character.Defenses)
         {
             defense.DamageType = CharacterParser.ParseDamageType(defense.DamageType.ToString());
