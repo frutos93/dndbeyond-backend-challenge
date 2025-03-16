@@ -195,6 +195,7 @@ Error code 404
 ```
 
 **POST /api/character/[name]/addTempHP**
+
 Add temporary hit points to the character. Temporary hit points are used before actual hit points.
 
 Cannot add hit points to a character with 0 health.
