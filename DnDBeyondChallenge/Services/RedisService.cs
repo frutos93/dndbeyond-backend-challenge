@@ -33,10 +33,11 @@ public class RedisService
             try
             {
                 var json = await File.ReadAllTextAsync(charFile);
+                //Make sure it's a valid character
                 var character = CharacterParser.ParseCharactersFromJson(json);
                 if (character != null)
                 {
-                    string key = CharacterKey + character.Name.ToLower();
+                    string key = CharacterKey + Path.GetFileNameWithoutExtension(charFile);
                     await db.StringSetAsync(key, JsonSerializer.Serialize(character));
                 }
             }
