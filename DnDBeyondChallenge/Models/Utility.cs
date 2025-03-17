@@ -13,8 +13,14 @@ public static class CharacterParser
 
         });
 
+        if (character == null)
+        {
+            throw new InvalidDataException("Non existent character object in file.");
+        }
+
         if (character.Name == string.Empty)
         {
+            // Adding a check for the name but name is not used as key when saving.ss
             throw new InvalidDataException("Missing or empty 'Name' field.");
         }
 

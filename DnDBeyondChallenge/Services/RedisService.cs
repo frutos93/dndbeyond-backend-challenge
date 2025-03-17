@@ -37,6 +37,7 @@ public class RedisService
                 var character = CharacterParser.ParseCharactersFromJson(json);
                 if (character != null)
                 {
+                    // Key is character file name as specificed in the additional notes of task.
                     string key = CharacterKey + Path.GetFileNameWithoutExtension(charFile).ToLower();
                     await db.StringSetAsync(key, JsonSerializer.Serialize(character));
                 }
