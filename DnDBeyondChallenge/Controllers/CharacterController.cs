@@ -86,7 +86,7 @@ public class CharacterController : ControllerBase
         }
 
         var amount = character.TakeDamage(damageType, request.Amount);
-        await characterService.SaveCharacterAsync(character);
+        await characterService.SaveCharacterAsync(name, character);
 
         response = new DamageResponse
         {
@@ -134,7 +134,7 @@ public class CharacterController : ControllerBase
 
         character.Heal(request.Amount);
 
-        await characterService.SaveCharacterAsync(character);
+        await characterService.SaveCharacterAsync(name, character);
 
         response = new HealResponse
         {
@@ -172,7 +172,7 @@ public class CharacterController : ControllerBase
 
         character.AddTemporaryHitPoints(request.Amount);
 
-        await characterService.SaveCharacterAsync(character);
+        await characterService.SaveCharacterAsync(name, character);
 
         var tempHPResponse = new TempHPResponse
         {

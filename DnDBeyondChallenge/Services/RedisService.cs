@@ -37,7 +37,7 @@ public class RedisService
                 var character = CharacterParser.ParseCharactersFromJson(json);
                 if (character != null)
                 {
-                    string key = CharacterKey + Path.GetFileNameWithoutExtension(charFile);
+                    string key = CharacterKey + Path.GetFileNameWithoutExtension(charFile).ToLower();
                     await db.StringSetAsync(key, JsonSerializer.Serialize(character));
                 }
             }
@@ -57,9 +57,10 @@ public class RedisService
         return json != null ? JsonSerializer.Deserialize<Character>(json) : null;
     }
 
-    public async Task SetCharacterAsync(Character character)
+    public async Task SetCharacterAsync(string key, Character character)
     {
-        string key = CharacterKey + character.Name.ToLower();
+        // Key can be different than character.Name.
+        key = CharacterKey + key.ToLower();
         string json = JsonSerializer.Serialize(character);
         await db.StringSetAsync(key, json);
     }
